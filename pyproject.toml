@@ -1,3 +1,46 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
 [project]
 name = "pyapihistory"
 version = "0.0.1"
+authors = [
+  { name="4Source", email="38220764+4Source@users.noreply.github.com" },
+]
+description = "A Python package that compares two versions of a Python codebase, identifies API changes, classifies relationships and exposes the results in a reusable format."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "Operating System :: OS Independent",
+]
+keywords = ["api", "history", "changelog", "AST", "diff", "change"]
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = [
+  "typer>=0.27.2",
+  "typing_extensions>=4.16.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  
+]
+test = [
+
+]
+publish = [
+  "twine"
+]
+
+[project.scripts]
+pyapihistory = "pyapihistory.cli:app"
+
+[project.urls]
+Repository = "https://github.com/4Source/pyapihistory"
+Documentation = "https://github.com/4Source/pyapihistory"
+Issues = "https://github.com/4Source/pyapihistory/issues"
