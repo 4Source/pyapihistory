@@ -1,6 +1,6 @@
 # API History
 
-**API History** compares the public API of two versions of a codebase and produces structured descriptions of what changed. It helps library maintainers and integrators understand API evolution across source directories and Git revisions, assess potentially breaking changes, and use comparison results in automated release workflows.
+**API History** compares the API of two versions of a codebase and produces structured descriptions of what changed. It helps library maintainers and integrators understand API evolution across source directories and Git revisions, assess potentially breaking changes, and use comparison results in automated release workflows.
 
 The comparison model is language-independent. **Python is the only currently supported language; C++ support is planned.**
 
